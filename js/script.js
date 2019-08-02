@@ -1,4 +1,4 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+let argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
 
 /**
  * Describe this function...
@@ -24,7 +24,7 @@ buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); print
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); printMessage('papier został kliknięty'); });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); printMessage('nożyce zostały kliknięte'); });
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
  * Describe this function...
