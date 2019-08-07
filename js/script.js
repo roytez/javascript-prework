@@ -16,14 +16,15 @@ function buttonClicked(argButtonName) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
-buttonTest = document.getElementById('button-test');
-buttonScissors = document.getElementById('button-scissors');
-buttonPaper = document.getElementById('button-paper');
-buttonRock = document.getElementById('button-rock');
-buttonRock.addEventListener('click', function(){ buttonClicked('kamień'); printMessage('kamień został kliknięty'); });
-buttonPaper.addEventListener('click', function(){ buttonClicked('papier'); printMessage('papier został kliknięty'); });
-buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce'); printMessage('nożyce zostały kliknięte'); });
-
+{
+const buttonTest = document.getElementById('button-test');
+const buttonScissors = document.getElementById('button-scissors');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+buttonRock.addEventListener('click', function(){ buttonClicked('kamień');  });  // printMessage('kamień został kliknięty'); tak było
+buttonPaper.addEventListener('click', function(){ buttonClicked('papier');  });
+buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce');  });
+}
 let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
