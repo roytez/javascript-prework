@@ -1,4 +1,5 @@
-let argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+{
+let argButtonName;
 
 /**
  * Describe this function...
@@ -16,7 +17,7 @@ function buttonClicked(argButtonName) {
   console.log('ruch komputera to: ' + computerMove);
   displayResult(playerMove, computerMove);
 }
-{
+
 const buttonTest = document.getElementById('button-test');
 const buttonScissors = document.getElementById('button-scissors');
 const buttonRock = document.getElementById('button-rock');
@@ -24,7 +25,7 @@ const buttonPaper = document.getElementById('button-paper');
 buttonRock.addEventListener('click', function(){ buttonClicked('kamień');  });  // printMessage('kamień został kliknięty'); tak było
 buttonPaper.addEventListener('click', function(){ buttonClicked('papier');  });
 buttonScissors.addEventListener('click', function(){ buttonClicked('nożyce');  });
-}
+
 let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 /**
@@ -62,15 +63,4 @@ function displayResult(argPlayerMove, argComputerMove) {
   }
   printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 }
-
-
-
-buttonRock.addEventListener('click', function(){
-    buttonClicked('kamień')
-buttonPaper.addEventListener('click', function(){
-    buttonClicked('papier')
-buttonScissors.addEventListener('click', function(){
-    buttonClicked('nożyce')
-    });
-  })
-})
+}
